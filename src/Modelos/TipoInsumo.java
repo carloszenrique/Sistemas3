@@ -14,12 +14,14 @@ class TipoInsumo
     String codtipoins;
     String descripcionins;
     Integer cantidadins;
+    Integer stock;
 
-    public TipoInsumo(String codtipoins, String descripcionins, Integer cantidadins)
+    public TipoInsumo(String codtipoins, String descripcionins, Integer cantidadins, Integer stock)
     {
         this.codtipoins = codtipoins;
         this.descripcionins = descripcionins;
         this.cantidadins = cantidadins;
+        this.stock = stock;
     }
 
     public String getCodtipoins() 
@@ -45,6 +47,16 @@ class TipoInsumo
     public void setCantidadins(Integer cantidadins) 
     {
         this.cantidadins = cantidadins;
+    }
+
+    public Integer getStock() 
+    {
+        return stock;
+    }
+
+    public void setStock(Integer stock) 
+    {
+        this.stock = stock;
     }
     
     

@@ -13,15 +13,14 @@ public class Insumo extends TipoInsumo
 {
     String codigoins;
     String estatus;
-    Integer stock;
     Integer cantidad;
 
-    public Insumo(String codigoins, String estatus, Integer stock, Integer cantidad, String codtipoins, String descripcionins, Integer cantidadins)
+    public Insumo(String codigoins, String estatus, Integer cantidad, String codtipoins, String descripcionins, Integer cantidadins, Integer stock)
     {
-        super(codtipoins, descripcionins, cantidadins);
+        super(codtipoins, descripcionins, cantidadins, stock);
         this.codigoins = codigoins;
         this.estatus = estatus;
-        this.stock = stock;
+      
         this.cantidad = cantidad;
     }
 
@@ -43,16 +42,6 @@ public class Insumo extends TipoInsumo
     public void setEstatus(String estatus) 
     {
         this.estatus = estatus;
-    }
-
-    public Integer getStock()
-    {
-        return stock;
-    }
-
-    public void setStock(Integer stock)
-    {
-        this.stock = stock;
     }
 
     public Integer getCantidad()
