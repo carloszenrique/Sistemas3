@@ -20,7 +20,6 @@ public class Insumo extends TipoInsumo
         super(codtipoins, descripcionins, cantidadins, stock);
         this.codigoins = codigoins;
         this.estatus = estatus;
-      
         this.cantidad = cantidad;
     }
 

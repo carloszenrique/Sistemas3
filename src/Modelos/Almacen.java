@@ -12,12 +12,12 @@ package Modelos;
 public class Almacen 
 {
     String codalmacen;
-    String descinsumo;
+    Integer capacidad;
 
-    public Almacen(String codalmacen, String descinsumo) 
+    public Almacen(String codalmacen, Integer capacidad) 
     {
         this.codalmacen = codalmacen;
-        this.descinsumo = descinsumo;
+        this.capacidad = capacidad;
     }
 
     public String getCodalmacen() 
@@ -30,15 +30,14 @@ public class Almacen
         this.codalmacen = codalmacen;
     }
 
-    public String getDescinsumo() 
-    {
-        return descinsumo;
+    public Integer getCapacidad() {
+        return capacidad;
     }
 
-    public void setDescinsumo(String descinsumo) 
-    {
-        this.descinsumo = descinsumo;
+    public void setCapacidad(Integer capacidad) {
+        this.capacidad = capacidad;
     }
-    
+
+
     
 }

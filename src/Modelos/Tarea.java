@@ -12,13 +12,13 @@ package Modelos;
 public class Tarea extends TipoOrganizacion
 {
     String codigot;
-    String nombre;
+    String nombret;
 
-    public Tarea(String codigot, String nombre, String codigo, String descripcion)
+    public Tarea(String codigot, String nombret, String codigo, String descripcion)
     {
         super(codigo, descripcion);
         this.codigot = codigot;
-        this.nombre = nombre;
+        this.nombret = nombret;
     }
 
     public String getCodigot()
@@ -31,14 +31,14 @@ public class Tarea extends TipoOrganizacion
         this.codigot = codigot;
     }
 
-    public String getNombre() 
+    public String getNombret() 
     {
-        return nombre;
+        return nombret;
     }
 
-    public void setNombre(String nombre) 
+    public void setNombret(String nombret) 
     {
-        this.nombre = nombre;
+        this.nombret = nombret;
     }
     
     
